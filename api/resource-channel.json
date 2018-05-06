@@ -1,0 +1,13 @@
+{
+  "/:chid/watch": {
+    "script" : "channel-watch",
+    "methods": ["get"],
+    "types"  : ["xspf", "m2ts", "webm", "m3u8"]
+  },
+
+  "/:chid/logo": {
+    "script" : "channel-logo",
+    "methods": ["get"],
+    "types"  : ["png"]
+  }
+}

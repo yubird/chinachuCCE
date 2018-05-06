@@ -1,0 +1,19 @@
+{
+  "/": {
+    "script" : "reserves",
+    "methods": ["get"],
+    "types"  : ["json"]
+  },
+  
+  "/:id": {
+    "script" : "reserves-program",
+    "methods": ["get", "delete"],
+    "types"  : ["json"]
+  },
+  
+  "/:id/:action": {
+    "script" : "reserves-program-action",
+    "methods": ["put"],
+    "types"  : ["json"]
+  }
+}

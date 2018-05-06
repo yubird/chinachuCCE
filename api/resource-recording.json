@@ -1,0 +1,25 @@
+{
+  "/": {
+    "script" : "recording",
+    "methods": ["get"],
+    "types"  : ["json"]
+  },
+
+  "/:id": {
+    "script" : "recording-program",
+    "methods": ["get", "delete"],
+    "types"  : ["json"]
+  },
+
+  "/:id/preview": {
+    "script" : "recording-program-preview",
+    "methods": ["get"],
+    "types"  : ["png", "jpg", "txt"]
+  },
+
+  "/:id/watch": {
+    "script" : "recording-program-watch",
+    "methods": ["get"],
+    "types"  : ["xspf", "m2ts", "webm"]
+  }
+}
